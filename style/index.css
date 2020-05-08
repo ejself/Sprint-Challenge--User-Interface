@@ -29,11 +29,32 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+blockquote, q {
+	quotes: none;
+}
+
+/* setting more things to a default */
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Body stuff */
+
 * {
     box-sizing: border-box;
 }
-
-
 
 html {
     height: 100%;
@@ -46,27 +67,8 @@ body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
-* {
-    box-sizing: border-box;
-}
-
-
+/* text */
 h1, h2, h3, h4, h5 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
@@ -77,10 +79,28 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 80.0rem;
-    margin: 0 auto;
+/* Header */
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
 }
+
+header nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#road {
+    width: 100%;
+    padding: 1%;
+}
+
+/* Top */
 
 .top-content {
     display: flex;
@@ -95,6 +115,8 @@ p {
     padding: 0 1%;
     padding-bottom: 2.0rem;  
 }
+
+/* Middle */
 
 .middle-content {
     margin-bottom: 2.0rem;
@@ -123,6 +145,41 @@ p {
     justify-content: center;
 }
 
+/* THE BOX DILEMMA */
+
+  #box1 {
+background-color: teal;
+}
+  #box2 {
+background-color: gold;
+}
+  #box3 {
+background-color: cadetblue;
+}
+  #box4 {
+background-color: coral;
+}
+  #box5 {
+background-color: crimson;
+}
+  #box6 {
+background-color: forestgreen;
+}
+  #box7 {
+background-color: darkorchid;
+}
+  #box8 {
+background-color: hotpink;
+}
+  #box9 {
+background-color: indigo;
+}
+  #box10 {
+background-color: dodgerblue;
+}
+
+/* Bottom */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 2.0rem;
@@ -136,6 +193,8 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* Footer */
 
 footer {
     width: 100%;
@@ -156,16 +215,54 @@ footer nav a {
     text-decoration: none;
 }
 
-header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 2rem 2%;
-    font-size: 1.4rem;
+/* Tablet View */
+
+@media(max-width: 800px){
+    body {
+        padding: 1% 0;
+    }
+
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .top-content .text-container {
+        width: 100%;
+    }
+
+    .middle-content .boxes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-evenly;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 60rem;
+    }
+    
+/*    .middle-content .boxes .box {
+        width: 10.0rem;
+        height: 10.0rem;
+        margin: 1%;
+        padding: 1%;
+    }
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 2.0rem;
+        justify-content: space-around;
+        }
+        
+    .bottom-content .text-container {
+        padding-right: 4%;
+        }
+        
+    .bottom-content .text-container:last-child {
+        padding-right: 0;
 }
 
-header nav a {
-    color: black;
-    text-decoration: none;
-}
+
+/* Mobile View */
+
