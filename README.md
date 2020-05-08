@@ -35,14 +35,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+-HTML Markup to reinforce meaning in a webpage, instead of just defining its appearance. Organization tool and also helpful for accessibility in webpage.
 
 2. What are the 4 areas of the box model?
+Content, Padding, Border, Margin.
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
+Cross-Axis.
 
 4. Explain why git is valuable to a team of developers.
+Git allows you to share and push code and all work on the same project simultaneously while also maintaining a version control that allows certain changes to be accepted or denied.
 
 5. Define mobile-first design in your own words.
+The webpage is built for mobile support first and then scaled up to support desktop/higher resolution browser view.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,11 +55,11 @@ You are expected to be able to answer all these questions. Your responses contri
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
 - [ ] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2:  Minimum Viable Product
