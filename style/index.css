@@ -243,25 +243,24 @@ footer nav a {
         height: 60rem;
     }
     
-/*    .middle-content .boxes .box {
+    .middle-content .boxes .box {
         width: 10.0rem;
         height: 10.0rem;
         margin: 1%;
         padding: 1%;
     }
+
     .bottom-content {
         display: flex;
+        flex-wrap: wrap;
         margin: 0 2% 2.0rem;
         justify-content: space-around;
-        }
-        
-    .bottom-content .text-container {
-        padding-right: 4%;
-        }
-        
-    .bottom-content .text-container:last-child {
-        padding-right: 0;
-}
+    }
+
+    .text-container {
+        width: 20rem;
+        padding: 1%;
+    }
 
 
 /* Mobile View */
