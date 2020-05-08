@@ -269,3 +269,69 @@ footer nav a {
 
 /* Mobile View */
 
+@media(max-width:500px){
+
+    header nav {
+            flex-direction: column;
+            width: 100%;
+            padding: 5%;
+            justify-content: center;
+        }
+    
+    header nav a{
+            padding: 1%;
+            font-size: 2rem;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+
+    #imgbox {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 3% 0;
+    }
+
+    #road {
+        height: 8rem;
+        width: 100%;
+    }
+
+    .top-content {
+        width: 100%;
+        display: flex;
+        padding: 5%;
+    }
+
+    .middle-content {
+        border-bottom: 0rem dashed white;
+    }
+
+    .middle-content .boxes {
+        height: 140rem;
+        padding: 1%;
+    }
+
+    .middle-content .boxes .box {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .text-container {
+        width: 25rem;
+        padding: 1%;
+    }
+
+    footer nav {
+        width: 100%;
+        flex-direction: column;
+
+    }
+    
+    footer nav a {
+        padding: 1%;
+        font-size: 2rem
+    }
+}
