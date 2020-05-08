@@ -59,7 +59,6 @@ table {
 	-webkit-font-smoothing:antialiased;
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 }
 
@@ -70,6 +69,20 @@ body {
 	line-height:3rem;
 	color:black;
 	background:white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 2rem 2%;
+    font-size: 1.4rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
 }
 
 .container {
